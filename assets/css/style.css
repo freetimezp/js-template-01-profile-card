@@ -1,5 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #c5c2e5;
+    font-family: 'Motserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 23rem;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.profile-card .background-wrapper {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(148,61,90,1) 47%, rgba(218,118,135,1) 100%);
+}
+
+.profile-card .background-wrapper .profile-image {
+    display: block;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-card .profile-image img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    transition: transform .25s;
+    cursor: pointer;
+}
+
+.profile-card .profile-image:hover img {
+    transform: scale(1.05);
+}
+
+.profile-card .info-wrapper {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.profile-card .contents {
+    width: 100%;
+    max-width: 16rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-card .contents .name {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.profile-card .contents .address {
+    font-weight: 300;
+    font-size: 0.75rem;
+    margin-top: 0.4375rem;
+}
+
+.profile-card .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.profile-card .socials .social {
+    display: block;
+    margin: 0 1rem;
+}
+
+.profile-card .socials .social i {
+    color: #000;
+    font-size: 1.25rem;
+    transition: all .3s;
+}
+
+.profile-card .socials .social:hover i {
+    color: #8d3856;
+    transform: translateY(-0.25rem);
+}
+
+.profile-card .contents .desc {
+    font-weight: 300;
+    font-size: 0.8125rem;
+    margin-top: 2rem;
+}
+
+.profile-card .contents .desc:last-child {
+    padding-top: 10px;
+    opacity: 0.8;
+    font-size: .8rem;
+    font-style: italic;
+    border-top: 1px solid #cac6c6;
+}
+
+
+
